@@ -1,0 +1,38 @@
+body{
+    background-color: lightpink;
+}
+.container{
+   /* border: 1px solid black;  */
+   background-color: white;
+   width: max-content;
+   margin: 150px auto;
+}
+
+#loginForm{
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+.input-design{
+    /* border: 1px solid black; */
+    margin: 8px 0;
+    width: 300px;
+    padding: 6px;
+}
+
+.dropdown{
+    margin: 8px 0;
+    width: 100px;
+    padding: 4px;
+}
+
+.submitbtn{
+    margin: 8px 0;
+    width: 100px;
+    padding: 4px;
+}
+
+.dob{
+    margin: 8px 0px;
+    width: 200px;
+    padding: 4px;
+}
