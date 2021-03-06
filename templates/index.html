@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <title>Login Form</title>
 </head>
-
 <body>
     <div class="container">
-        <form action="" name="loginForm" method="POST" onsubmit="" id="loginForm">
-            <input class="input-design" id="email" type="email" name="email" placeholder="Email Address"><br>
-            <input class="input-design" id="password" type="password" name="password" placeholder="Enter Password"><br>
+        {% block success_message%}
+        {% endblock success_message%}
+        <form name="loginForm" method="POST" id="loginForm">
+            <input class="input-design" id="email" type="email" name="email" placeholder="Email Address" required><br>
+            <input class="input-design" id="password" type="password" name="password" placeholder="Enter Password" required><br>
+            {% block message%}
+            {% endblock message%}<br>
             <label for="date">Enter DOB:</label>
-            <input class="dob" id="date" type="date" name="date"><br>
-            <input class="input-design" id="fname" type="text" placeholder="First Name" name="fName"><br>
-            <input class="input-design" id="lname" type="text" placeholder="Last Name" name="lName"><br>
+            <input class="dob" id="date" type="date" name="date" required><br>
+            <input class="input-design" id="fname" type="text" placeholder="First Name" name="fName" required><br>
+            <input class="input-design" id="lname" type="text" placeholder="Last Name" name="lName" required><br>
             <label id="gender" for="gender">Select Gender:</label>
             <select class="dropdown" id="select-gender" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select><br>
-            <input class="input-design" id="postalcode" type="number" name="postalCode" placeholder="Enter Postal Code"><br>
+            <input class="input-design" id="postalcode" type="number" name="postalCode" placeholder="Enter Postal Code" required><br>
             <input class="submitbtn" id="submit" type="submit" value="Submit">
         </form>
     </div>
