@@ -9,13 +9,11 @@
 </head>
 <body>
      <div class="container">
-        {% block success_message%}
-        {% endblock success_message%}
+        {% block error_password %}
+        {% endblock error_password %}
         <form name="loginForm" method="POST" id="loginForm">
             <input class="input-design" id="email" type="email" name="lEmail" placeholder="Email Address" required><br>
             <input class="input-design" id="password" type="password" name="lPassword" placeholder="Enter Password" required><br>
-            {% block message%}
-            {% endblock message%}<br>
             <input class="submitbtn" id="submit" type="submit" value="Submit">
         </form>
     </div>

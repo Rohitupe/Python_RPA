@@ -43,7 +43,7 @@ def signup_page():
                 break
 
         if flag == -1:
-            return render_template('error_message.html')
+            return render_template('error_password.html')
 
     else:
         return render_template('index.')
@@ -96,7 +96,7 @@ def data():
                 break
 
         if flag == -1:
-            return render_template('error_message.html')
+            return render_template('error_password.html')
 
     else:
         return redirect('/')
