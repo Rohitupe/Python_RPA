@@ -94,6 +94,7 @@ def signup():
                 else:
                     flag = 0
                     sign_up(email, password, date_type, first_name, last_name, gender, 'W1F7NU')
+
                     return redirect('/login')
 
             if flag == -1:
