@@ -40,7 +40,7 @@ class RPALogin(db.Model):
 @app.route("/", methods=['GET', 'POST'])
 def signup():
     data = RPA.query.all()
-    print(len(data))
+    # print(len(data))
 
     if request.method == "GET":
         # delete all records
@@ -62,7 +62,7 @@ def signup():
         # change date type from string to datetime.date
         date_type = datetime.strptime(date, "%Y-%m-%d")
         # print(email, password, date_type, first_name, last_name, gender, postal_code)
-        print(email, password, date_type, first_name, last_name, gender)
+        # print(email, password, date_type, first_name, last_name, gender)
 
         data = RPA.query.all()
 
@@ -108,7 +108,7 @@ def signup():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     login_data = RPALogin.query.all()
-    print(len(login_data))
+    # print(len(login_data))
 
     if request.method == "GET":
         # delete all records
@@ -122,7 +122,7 @@ def login():
         lEmail = request.form['lEmail']
         lPassword = request.form['lPassword']
 
-        print(lEmail, lPassword)
+        # print(lEmail, lPassword)
 
         # login_data = RPALogin.query.all()
 

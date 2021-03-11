@@ -1,31 +1,19 @@
-import string
-import re
-# password = "Rohit.tupe21"
-password = "rohitT3u"
+# count = 0
 #
-# print(string.ascii_uppercase)
-# print(string.ascii_lowercase)
-# print(string.digits)
-import re
+# with open('cardnumber.txt', 'a') as f:
+#     f.writelines(f"{count}\n")
 
-flag = 0
-while True:
-    if (len(password) < 8):
-        flag = -1
-        break
-    elif not re.search("[a-z]", password):
-        flag = -1
-        break
-    elif not re.search("[A-Z]", password):
-        flag = -1
-        break
-    elif not re.search("[0-9]", password):
-        flag = -1
-        break
-    else:
-        flag = 0
-        print("Valid Password")
-        break
+number, points, email = 23231454, 20, 'rohit@gmail.com'
 
-if flag == -1:
-    print("Not a Valid Password")
+from csv import DictWriter
+
+with open("H&M.csv", 'a', newline='') as csvF:
+    csv_writer = DictWriter(csvF, fieldnames=["Loyalty card number", "Points balance", "Email Id"])
+    if csvF.tell() == 0:
+        csv_writer.writeheader()
+    csv_writer.writerow({
+        "Loyalty card number" : number,
+        "Points balance" : points,
+        "Email Id" : email
+    })
+
