@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, date as d
-from Signup import sign_up, login_user
+from Selenium_Automation import sign_up, login_user
 import re
 
 app = Flask(__name__)

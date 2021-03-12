@@ -1,2 +1,2 @@
-SignUP Loyalty card number = 103611722721661,	Points balance = 0 --> for user with email 'thanos@gmail.com'
-Login Loyalty card number = 103611722721661,	Points balance = 0 --> for user with email 'thanos@gmail.com'
+SignUP Loyalty card number = 103611722630314,	Points balance = 0 --> for user with email 'sampleuser22@gmail.com'
+Login Loyalty card number = 103611722630314,	Points balance = 0 --> for user with email 'sampleuser22@gmail.com'

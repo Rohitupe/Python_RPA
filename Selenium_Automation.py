@@ -110,7 +110,7 @@ def login_user(email, password):
     time.sleep(3)
 
     # Perform Mouse Action
-    admin = driver.find_elements_by_class_name('menu__myhm')
+    admin = driver.find_element_by_xpath("//div[@class='account parbase']/a[2]")
     signOut = driver.find_element_by_xpath('/html/body/header/nav/ul[1]/li[1]/div/div[2]/ul/li[3]/a')
 
     """ Actions To Perform with Mouse """
@@ -118,7 +118,7 @@ def login_user(email, password):
 
     """ 1. Mouse Hover"""
     # Hover and Click -perform() is necessary to perform click action
-    actions.move_to_element(admin[1]).move_to_element(signOut).click().perform()
+    actions.move_to_element(admin).move_to_element(signOut).click().perform()
 
     # close browser
     driver.close()
